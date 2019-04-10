@@ -15,7 +15,7 @@ public class Sorteador <T> {
 	
 	/**
      * Construye un nuevo <code>Sorteador</code> de elementos.
-     * @param cantMaxima Número máximo de elementos que alojar� el sorteador
+     * @param cantMaxima Número máximo de elementos que alojará el sorteador
      */
 	public Sorteador(int cantMaxima) {
 		this.CANT_MAXIMA = cantMaxima;
