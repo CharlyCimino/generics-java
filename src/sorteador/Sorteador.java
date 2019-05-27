@@ -2,7 +2,7 @@ package sorteador;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -16,6 +16,7 @@ import java.util.Random;
 public class Sorteador<T> {
 	private ArrayList<T> elementos;
 	private ArrayList<T> candidatos;
+	private Random random;
 
 	/**
 	 * Construye un nuevo sorteador de elementos.
@@ -23,6 +24,7 @@ public class Sorteador<T> {
 	public Sorteador() {
 		this.candidatos = new ArrayList<T>();
 		this.elementos = new ArrayList<T>();
+		this.random = new Random();
 	}
 
 	/**
@@ -45,8 +47,7 @@ public class Sorteador<T> {
 	 * @param elementos Los elementos a insertar.
 	 */
 	public void insertar(T[] elementos) {
-		this.candidatos.addAll(Arrays.asList(elementos));
-		this.elementos.addAll(Arrays.asList(elementos));
+		this.insertar(Arrays.asList(elementos));
 	}
 
 	/**
@@ -54,7 +55,7 @@ public class Sorteador<T> {
 	 * 
 	 * @param elementos Los elementos a insertar.
 	 */
-	public void insertar(ArrayList<T> elementos) {
+	public void insertar(List<T> elementos) {
 		this.candidatos.addAll(elementos);
 		this.elementos.addAll(elementos);
 	}
@@ -111,7 +112,6 @@ public class Sorteador<T> {
 	 * @return un número entero aleatorio entre 0 y <code>n-1</code>
 	 */
 	private int aleatorio(int n) {
-		Random r = new Random();
-		return r.nextInt(n);
+		return random.nextInt(n);
 	}
 }
