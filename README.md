@@ -7,6 +7,6 @@ Se crea una colección propia llamada `Sorteador` la cual permite guardar elemen
 
 ## Diagrama de clases
 
-![Diagrama de clases](src/sorteador/uml/clases-sorteador-generics-java.png)
+![Diagrama de clases](src/uml/clases-generics-java.png)
 
-Proyecto realizado con Eclipse IDE.
+Proyecto realizado con NetBeans 8.2. Compatible con Eclipse.
