@@ -12,6 +12,6 @@ public class Club {
 
     @Override
     public String toString() {
-        return nombre + " de " + pais.toString();
+        return nombre + " de " + pais;
     }
 }
