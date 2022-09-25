@@ -1,4 +1,4 @@
-package generics;
+package ar.charlycimino.ejemplos.generics.sorteador;
 
 public enum PaisSudamericano {
     ARGENTINA, BRASIL, URUGUAY, PARAGUAY, CHILE, BOLIVIA,
